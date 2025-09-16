@@ -4,4 +4,4 @@
 ### The main issue i encountered while doing this was figuring out how to properly commit my work to github, as i had forgotten how to in class. I eventually figured it out though, as i hadent written a document reason before pushing. 
 #### I only used code sourced from the class github link, under the [01git&shell](https://github.com/rdwrome/261fa25/tree/main/01Git%26Shell) section of the class folders. 
 # [I got my haiku from this website, the 32nd example](https://reedsy.com/discovery/blog/haiku-poem-examples)
-### CODE USED `say "a raindrop from, the rooftop, fell in my beer" -o hello.aiff` 
+### CODE USED `say "a raindrop from, the rooftop, fell in my beer" -o cliffordhaiku.aiff` 
