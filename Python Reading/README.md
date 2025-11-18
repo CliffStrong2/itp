@@ -1,0 +1,10 @@
+# Python Reading - Clifford Strong II
+
+
+#### In the first chapter of the reading i already knew how a program works, where it has input, outputs, math and conditional execusion based upon all of those. I knew this because, as stated in the reading as well, pretty much every program is made up of these main components. What i didnt know however was the concept of floating point numbers. It makes sense that you would have to have the distinction of having a .0 to make it not an integer, as many programming languages are very anal about how you specify information. 
+
+#### For the third chapter i already knew what a return value is, because what i mentioned previously, pretty much every programming language has this function, even if it may not have the same name. What i didnt know however was how many functions can be assigned in python. Specifically with the section where it has "print_twice" and that you can manipulate how that function is executed, for example having parenthases to take previously stated lines and compining them later. 
+
+#### For the fifth chapter i already knew what a boolean expression is because we discussed how they operate within javascript. They have essentially the same opperators and funtion the same. What i didnt know about were chained conditionals though. Essentially its exactly what it sounds like, where certain conditions can be strung into an if this isnt true than see if this is true sequence. They are chained by what are called elif statements, where each statement is checked in order of it being written, going down the time until something is true. 
+
+#### For the tenth chapter i already knew about nesting when it came to list, as weve gone though the same thing in javascript. In fact much of the basic functions are pretty similar across the two, its simply how certain operations work and come out that shows the differences in the two. What i didnt know however was that you can essentially put away a list while working on another using the res function. Its a way of filtering your work in another list so that you can have a better organized way of reading out your lists. 
