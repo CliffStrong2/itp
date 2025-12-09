@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Monkey Madness Trivia</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="question"></div>
+    <div id="answers"></div>
+    <div id="feedback"></div>
+	<script>
+const trivia = [
+{
+	question: "Which monkey is known for its large nose?",
+	answers: ["Spider", "Proboscus", "stubnose", "macaque"],
+	correct: 1
+},
+{
+	question: "which monkey is known for its large appendages?",
+	answers: ["Spider", "Tamarin", "Capuchin", "Curious George"],
+	correct: 0
+},
+{
+	question: "What are the two main genus of primates?",
+	answers: ["Old world/ New world", "Good/ Bad", "Southern/ Northern", "Long tail/ Short tail"],
+	correct: 0
+},
+{
+	question: "Which Primate, excluding humans, is the smartest?",
+	answers: ["Chimpanzee", "orangutan", "Macaque", "gorilla"],
+	correct: 0
+},
+{
+	question: "Which monkey has a distinctive blue face?",
+	answers: ["golden lion", "Mandril", "Gorilla", "Arctic monkey"],
+	correct: 1
+}
+];
+
+        let currentQuestion = 0;
+
+        function loadQuestion() {
+            const q = trivia[Math.floor(Math.random() * trivia.length)];
+            currentQuestion = q;
+
+            document.getElementById("question").textContent = q.question;
+
+            const answersDiv = document.getElementById("answers");
+            answersDiv.innerHTML = "";
+
+            q.answers.forEach((answer, index) => {
+                const btn = document.createElement("button");
+                btn.textContent = answer;
+                btn.className = "answer-btn";
+                btn.onclick = () => checkAnswer(index);
+                answersDiv.appendChild(btn);
+            });
+
+            document.getElementById("feedback").textContent = "";
+        }
+
+        function checkAnswer(selectedIndex) {
+            const feedback = document.getElementById("feedback");
+
+            if (selectedIndex === currentQuestion.correct) {
+                feedback.style.color = "green";
+                feedback.textContent = "GOOD JOB!!!";
+            } else {
+                feedback.style.color = "red";
+                feedback.textContent = "FALSE" + 
+                    currentQuestion.answers[currentQuestion.correct];
+}
+
+setTimeout(loadQuestion, 2000);
+}
+     
+loadQuestion();
+</script>
+</body>
+</html>
